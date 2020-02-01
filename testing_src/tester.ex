@@ -1,6 +1,7 @@
 defmodule Tester do
 
   @spec run(string) :: string
+
   def run(path \\ "testingFolder") do
     case File.ls(path)  do
       {:ok, files}
