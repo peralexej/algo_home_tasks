@@ -5,8 +5,8 @@ defmodule Tester do
   def run(path \\ "testingFolder") do
     case File.ls(path)  do
       {:ok, files}
-        ->
-          Enum.map(files, fn file -> calculate_and_save(file, path) end)
+      ->
+        Enum.map(files, fn file -> calculate_and_save(file, path) end)
       {:error, reason} -> IO.puts reason
     end
   end
