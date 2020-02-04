@@ -20,6 +20,8 @@ defmodule Tester do
         {:error, _reason} -> "That file doesn't exist"
       end
     end
+    [head | _tail] = str
+    head
   end
 
   def save_to_file(file_name, len) do
